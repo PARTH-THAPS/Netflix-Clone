@@ -1,7 +1,7 @@
 import express from 'express';
-import { Register } from '../controllers/user';
+import { Register } from '../controllers/user.js';
 
-const router= express.router();
+const router= express.Router();
 
 router.route("/register").post(Register);
 
